@@ -1,9 +1,10 @@
 package com.tutorial.androidactivitylifecycleex;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 /*
  Android Activity Lifecycle is controlled by 7 methods of android.app.Activity class.
  An activity is the single screen in android. It is like window or frame of Java.
@@ -16,10 +17,9 @@ import android.util.Log;
  onRestart()-> called after your activity is stopped, prior to start.
  onStop()-> called when activity is no longer visible to the user.
  onDestroy()-> called before the activity is destroyed.
-
  */
 public class MainActivity extends AppCompatActivity {
-    String TAG="MainActivity";
+    String TAG = "MainActivity";
 
     /*
     onCreate()-> called when activity is first created.
@@ -28,15 +28,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i(TAG,"onCreate method called");
+        Log.i(TAG, "onCreate method called");
     }
+
     /*
     onStart()-> called when activity is becoming visible to the user.
      */
     @Override
     protected void onStart() {
         super.onStart();
-        Log.i(TAG,"onStart method called");
+        Log.i(TAG, "onStart method called");
     }
 
     /*
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.i(TAG,"onRestart method called");
+        Log.i(TAG, "onRestart method called");
     }
 
     /*
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i(TAG,"onResume method called");
+        Log.i(TAG, "onResume method called");
     }
 
     /*
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        Log.i(TAG,"onPause method called");
+        Log.i(TAG, "onPause method called");
     }
 
     /*
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        Log.i(TAG,"onStop method called");
+        Log.i(TAG, "onStop method called");
     }
 
     /*
@@ -81,6 +82,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.i(TAG,"onDestroy method called");
+        Log.i(TAG, "onDestroy method called");
     }
 }
