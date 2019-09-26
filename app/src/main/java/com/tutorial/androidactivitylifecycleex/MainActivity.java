@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
  An activity is the single screen in android. It is like window or frame of Java.
  By the help of activity, you can place all your UI components or widgets in a single screen.
  The 7 lifecycle method of Activity describes how activity will behave at different states.
+
  onCreate()-> called when activity is first created.
  onStart()-> called when activity is becoming visible to the user.
  onResume()-> called when activity will start interacting with the user.
